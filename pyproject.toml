@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ibm-de-ml-spark"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Chaves <danielmschaves@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pandas = "^2.1.1"
+pyspark = "^3.5.0"
+pytest = "^7.4.2"
+findspark = "^2.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
