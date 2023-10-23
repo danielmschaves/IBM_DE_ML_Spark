@@ -122,6 +122,6 @@ if __name__ == "__main__":
     data_csv = 'data.csv'
     
     sc, spark = initialize_spark(master)
-    # clone_HMP_dataset()
+    clone_HMP_dataset()
     df = create_dataframe(spark, schema, sample)
     write_to_csv(df, data_dir, data_csv)
