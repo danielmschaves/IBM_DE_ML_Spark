@@ -69,15 +69,15 @@ def preprocess_data(df):
 
 def split_data(df):
     """
-    Purpose:
+    Purpose
     Splits the input DataFrame into training and test sets.
 
-    Parameters:
+    Parameters
     df: The Spark DataFrame to split.
-    
-    Code Explanation:
+    Code Explanation
     df.randomSplit([0.8, 0.2], seed=42): Randomly splits the DataFrame into training and test sets. 
-    """
+    
+"""
     try:
         train, test = df.randomSplit([0.8, 0.2], seed=42)
         return train, test
